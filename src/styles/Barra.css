@@ -1,0 +1,51 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 100px;
+    gap: 15px;
+    align-items: center;
+}
+
+.site-title{
+    margin-left: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-title:hover{
+    color: #535353;
+}
+
+.ulWithList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    color: inherit;
+    list-style: none;
+}
+
+.ulWithList a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.ulWithList a:hover {
+    color: #535353;
+}
+
+
+#btn {
+    margin-top: 10px;
+    color: rgb(105, 238, 105);
+}

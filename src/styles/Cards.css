@@ -1,0 +1,38 @@
+
+.card{
+    margin-top: 50px;
+    gap: 5px;
+    width: 100%;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambia el número de columnas según tu preferencia */
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.card-doc {  
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card-doc a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-doc img {
+    height: 150px;
+    width: 150px;
+}
+
+ul li{
+    gap: 10px;
+}
