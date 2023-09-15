@@ -20,12 +20,15 @@ const Card = ({ dentista }) => {
   return (
     <div className="card">
         <div className="card-doc">
-          <Link to={'/detail/' + dentista.id}>
             <img src="../img/doctor.jpg" alt=""/>
             <h2>{dentista.name}</h2>
             <h3>{dentista.username}</h3>
-          </Link>
-          <button onClick={addFav} className="favButton">⭐</button>
+            <Link to={'/detail/' + dentista.id}>
+            <div className="detallesDentista">
+              <p>Detalles de {dentista.name}</p>
+            </div>
+            </Link>
+          <button onClick={addFav} className="favButton">{findOdontologo ? <img className="icon" src="../img/stair.png" alt="fav"/> : <img className="icon" src="../img/unstair.png" alt="fav"/>}</button>
         </div>  
     </div>
   );

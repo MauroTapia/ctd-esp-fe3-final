@@ -28,6 +28,11 @@
     color: inherit;
 }
 
+main > h1::first-letter  {
+color: red;
+
+}
+
 .card-doc h2::first-letter {
     color: red;
 }
@@ -36,6 +41,12 @@
     height: 100%;
     width: 100%;
 }
+
+.card-doc .icon{
+    width: 20px;
+    height: 20px;
+}
+
 
 .detallesDentista{
     height: 35px;
@@ -61,6 +72,7 @@
 .favButton{
     cursor: pointer;    
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: transparent;
     border-radius: 20%;
 }

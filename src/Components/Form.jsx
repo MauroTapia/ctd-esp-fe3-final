@@ -29,9 +29,9 @@ const Form = () => {
     <div>
     <form>
       <label htmlFor="">Nombre: </label>
-      <input onChange ={(event) => setCliente({...cliente,nombre: event.target.value}) } type="text" placeholder="ingresá tu nombre"/>
+      <input onChange ={(event) => setCliente({...cliente,nombre: event.target.value}) } type="text" placeholder="Ingresá tu nombre"/>
       <label htmlFor="">Email: </label>
-      <input type="text" onChange ={(event) => setCliente({...cliente,email: event.target.value}) } placeholder="ingresá tu email"/>
+      <input type="text" onChange ={(event) => setCliente({...cliente,email: event.target.value}) } placeholder="Ingresá tu email"/>
       <button onClick={handleSubmit}>Enviar</button>
       {enviado && <h3>Gracias {cliente.nombre}, te contactaremos cuanto antes vía mail </h3>}
       {error && <h3 style={{color: 'red'}}>Por favor verifique su información nuevamente</h3>}

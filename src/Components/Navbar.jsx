@@ -13,6 +13,7 @@ const Navbar = () => {
     dispatch({ type: 'SWITCH_THEME' }); // Activa la acción SWITCH_THEME del contexto
   };
 
+  const bodyClassName = `body ${state.theme}`
 
   return (
     <nav>
@@ -25,7 +26,7 @@ const Navbar = () => {
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/favs">Favs</Link></li>
           </ul>
-        <button onClick={toggleTheme} id='btn'><img src="../img/luna.png" width={"20px"} height={"20px"} alt="" /></button>
+        <button onClick={toggleTheme} id='btn'>{ !state.theme ?  <img src="../img/luna.png" alt=""/> : <img src='../img/sol.png' alt='' />}</button>
       </div>
       
     </nav>
