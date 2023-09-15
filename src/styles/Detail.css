@@ -1,0 +1,25 @@
+.detail{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.detail div h1{
+    text-align: center;
+    transition: .5s;
+}
+
+.detail div h2{
+    transition: .5s;
+}
+
+.detail div h2::first-letter{
+    color: red;
+}
+
+
+.detail img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}

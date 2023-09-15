@@ -15,6 +15,17 @@ nav{
     align-items: center;
 }
 
+.nav-bar button{
+    width: 30px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.nav-bar button img{
+    width: 100%;
+    height: 100%;
+}
+
 .site-title{
     margin-left: 30px;
     text-decoration: none;

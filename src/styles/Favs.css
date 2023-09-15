@@ -1,0 +1,8 @@
+.favs h1 {
+    text-align: center;
+    transition: .5s;
+}
+
+.favs h1::first-letter{
+    color: red;
+}

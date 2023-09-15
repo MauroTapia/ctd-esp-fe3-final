@@ -1,6 +1,4 @@
-
 .card{
-    margin-top: 50px;
     gap: 5px;
     width: 100%;
 }
@@ -15,10 +13,12 @@
 .card-doc {  
     display: flex;
     flex-direction: column;
+    width: 300px;
     border: 1px solid #ddd;
-    padding: 20px;
+    box-sizing: content-box;
+    margin-left: 20px;
+    margin-top: 50px;
     text-align: center;
-    justify-content: center;
     align-items: center;
     text-decoration: none;
 }
@@ -28,9 +28,46 @@
     color: inherit;
 }
 
+.card-doc h2::first-letter {
+    color: red;
+}
+
 .card-doc img {
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+.detallesDentista{
+    height: 35px;
+    border: 1px solid rgb(142, 142, 142);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.detallesDentista p{
+    display: block;
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.detallesDentista:hover{
+    transition: 0.5s ease ;
+    transform: scale(0.9);
+    background-color:rgb(142, 142, 142);
+    color: white;
+}
+
+.favButton{
+    cursor: pointer;    
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 20%;
+}
+
+.favButton:hover{
+    transition: 1s ease;
+    transform: scale(0.8);
 }
 
 ul li{
