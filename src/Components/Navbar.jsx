@@ -13,7 +13,7 @@ const Navbar = () => {
     dispatch({ type: 'SWITCH_THEME' }); // Activa la acción SWITCH_THEME del contexto
   };
 
-  const bodyClassName = `body ${state.theme}`
+  const bodytheme = `body ${state.theme}`
 
   return (
     <nav>

@@ -85,3 +85,20 @@ color: red;
 ul li{
     gap: 10px;
 }
+
+@media screen and (max-width: 959px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Cambia el número de columnas según tu preferencia */
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* Para pantallas más grandes o iguales a 960px pero más pequeñas que 1300px */
+@media screen and (min-width: 960px) and (max-width: 1299px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Cambia el número de columnas según tu preferencia */
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
