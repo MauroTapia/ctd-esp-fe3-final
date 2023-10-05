@@ -26,7 +26,7 @@ const Navbar = () => {
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/favs">Favs</Link></li>
           </ul>
-        <button onClick={toggleTheme} id='btn'>{ !state.theme ?  <img src="../img/luna.png" alt=""/> : <img src='../img/sol.png' alt='' />}</button>
+        <button onClick={toggleTheme} id='btn'>{ !state.theme ?  <span>🌙</span>: <span>☀️</span>}</button>
       </div>
       
     </nav>
